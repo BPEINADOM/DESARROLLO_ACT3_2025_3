@@ -1,5 +1,4 @@
 package co.edu.udec.taskmgr.domain.entidades;
-import java.util.Date;
 
 public class Empleado {
     private int empleado_id;
@@ -7,27 +6,17 @@ public class Empleado {
     private String numero_documento;
     private String nombres;
     private String apellidos;
-    private Date fecha_nacimiento;
-    private String genero;
     private String correo;
-    private String direccion;
     private String numero_telefono;
 
-    public Empleado(int empleado_id, String tipo_documento, String numero_documento, String nombres, String apellidos) {
+    public Empleado(int empleado_id, String tipo_documento, String numero_documento, String nombres, String apellidos, String correo, String numero_telefono) {
         
         this.empleado_id = empleado_id;
         this.tipo_documento = tipo_documento;
         this.numero_documento = numero_documento;
         this.nombres = nombres;
         this.apellidos = apellidos;
-    }
-
-    public Empleado(Date fecha_nacimiento, String genero, String correo, String direccion, String numero_telefono) {
-        
-        this.fecha_nacimiento = fecha_nacimiento;
-        this.genero = genero;
         this.correo = correo;
-        this.direccion = direccion;
         this.numero_telefono = numero_telefono;
     }
 
@@ -71,21 +60,6 @@ public class Empleado {
         this.apellidos = apellidos;
     }
 
-    public Date getFecha_nacimiento() {
-        return fecha_nacimiento;
-    }
-
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
 
     public String getCorreo() {
         return correo;
@@ -93,14 +67,6 @@ public class Empleado {
 
     public void setCorreo(String correo) {
         this.correo = correo;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
     }
 
     public String getNumero_telefono() {
