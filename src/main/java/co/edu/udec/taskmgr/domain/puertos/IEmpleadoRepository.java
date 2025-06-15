@@ -8,7 +8,7 @@ public interface IEmpleadoRepository {
 
     void crearEmpleado(Empleado empleado);
     Empleado consultarporID(int empleado_id);
-    List<Empleado> consultarTodos();
+    List<Empleado> listarTodos();
     Empleado actualizarEmpleado(Empleado empleado);
     void eliminarEmpleado(int empleado_id);
 
